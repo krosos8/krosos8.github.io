@@ -1,0 +1,954 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 9:30:39 Jul 6, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:38:52 Nov 2, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body
+{
+	background-color: #bbb;
+	color: #000;
+	font: 13px Tahoma;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: left;
+}
+
+
+a:link
+{
+	color: #147;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #47a;
+	text-decoration: none;
+}
+a:hover, a:active
+{
+	color: #F50;
+	text-decoration: underline;
+}
+.page
+{
+	text-align: left;
+	color: #000
+}
+td, th, p, li
+{
+	font-size: 12px;
+	
+}
+.tborder
+{
+	background-color: #888;
+	color: #000000;
+}
+.tcat
+{
+	background-color: #27d;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 4px 4px 4px 10px;
+}
+.tcat a:link
+{
+	color: #FFF;
+	text-decoration: none;
+}
+.tcat a:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active
+{
+	color: #fff;
+	text-decoration: underline;
+}
+.thead
+{
+	background-color: #ccc;
+	color: #444;
+	font-size: 9px;
+	padding: 0px 0px 0px 5px;
+}
+.thead a:link, .thead a:visited
+{
+	color: #117;
+}
+
+.thead a:hover, .thead a:active
+{
+	color: #fff;
+}
+.tfoot
+{
+	background-color: #E4E4E4;
+	color: #000000;
+}
+.alt1, .alt1Active
+{
+	background-color: #fafafa;
+	color: #222;
+}
+.alt2, .alt2Active
+{
+	background-color: #f0f0f5;
+	color: #222;
+}
+
+.wysiwyg
+{
+	background-color: #F5F5F5;
+	color: #000000;
+	font-size: 11px;
+}
+textarea, .bginput
+{
+	font-size: 11px;
+}
+.button
+{
+	font-size: 11px;
+}
+select
+{
+	font-size: 11px;
+}
+option, optgroup
+{
+	font-size: 11px;
+}
+.smallfont
+{
+	font-size: 10px;
+}
+.time
+{
+	color: #666666;
+}
+.navbar
+{
+	font-size: 11px;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background-color: #1B4CA2;
+	color: #FFFFFF;
+}
+.fjdpth0
+{
+	background-color: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	color: #000000;
+	padding: 10px;
+	border: 0px outset;
+}
+.panelsurround
+{
+	color: #000000;
+	background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_dark.gif) #E4E4E4;
+}
+legend
+{
+	color: #1B4CA2;
+	font: 11px Tahoma, 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+}
+.vbmenu_control
+{
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+	background-color: #06b;
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 11px;
+	border-left: 1px #59b solid;
+	border-top: 1px #69b solid;
+	border-bottom: 1px #039 solid;
+	border-right: 1px #038 solid;
+
+}
+.vbmenu_control a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #999;
+}
+.vbmenu_option
+{
+	background: #F4F4F4 url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_light.gif);;
+	color: #000000;
+	font: 11px Tahoma, 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link
+{
+	color: #1B4CA2;
+	text-decoration: none;
+}
+.vbmenu_option a:visited
+{
+	color: #1B4CA2;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #1B4CA2 url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_blue.gif);;
+	color: #FFFFFF;
+	font: 11px Tahoma, 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.bigusername { font-size: 12px; font-weight: bold; }
+td.thead, div.thead { padding: 4px; }
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+.fieldset { margin-bottom: 6px; }
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+#container { 
+
+margin-left: auto; 
+margin-right: auto; 
+min-width: 700px; 
+width: 95%; 
+border-left: 1px #555 solid; 
+border-right: 1px #555 solid; 
+
+}
+#wrapper { background: #FFFFFF; color: #000000; }
+img { border: 0; vertical-align: middle; }
+.subtoolbar { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_dark.gif) #E4E4E4; color: #000000; padding: 5px 6px 5px 6px; border-bottom: 1px #888 solid; }
+.pinlight { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_light.gif) #ECECEC; color: #000000; }
+.pindark { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_dark.gif) #E4E4E4; color: #000000; }
+
+
+.gradblue { background-color:  #16b; color: #FFFFFF; font: bold 11px Tahoma,'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; padding: 4px 4px 4px 14px; text-shadow: #00237A 0px 1px 1px; }
+
+.gradblue a:link, .gradblue a:visited { color: #FFFFFF; text-decoration: none; }
+.gradblue a:hover, .gradeblue a:active { color: #FFFFFF; text-decoration: underline; }
+.gradgray { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/grad_gray.gif) #BDBDBD repeat-x; color: #FFFFFF; font: 11px Tahoma,'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; padding: 2px 3px 2px 7px; text-shadow: #555555 0px 1px 1px; }
+.gradgray a:link, .gradgray a:visited { color: #FFFFFF; text-decoration: none; }
+.gradgray a:hover, .gradgray a:active { color: #FFFFFF; }
+.gradaquag { background-color: #ddd; color: #000000; font: bold 10px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; height: 15px; margin: 0px; padding: 0px 7px 0px 7px; border-bottom:1px dotted #888;}
+.gradaquag a { color: #000000; font: 10px Tahoma, 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; }
+.tableborder { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_dark.gif) #B2B2B2; border: 0px; color: #000000; margin: 0px; padding: 0px; }
+.forumlink { color: #1B4CA2; font: bold 12px Tahoma, 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; padding-left: 5px; }
+.fdesc { padding-left: 5px; font-size: 10px; }
+.footernav { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/toolbar_bg.gif) #F4F4F4; color: #000000; margin: 0px; padding: 0px; }
+#footernav { float: left; width: 100%; }
+#footernav ul{ list-style: none; margin: 0; padding: 0 0 0 6px; }
+#footernav li{ display: inline; float: left; margin: 0 0 0 1px; padding: 0; text-align: center; vertical-align: middle; }
+#footernav a{ color: #000000; display: block; margin-left: 1px; margin-right: 1px; padding: 3px 5px 3px 5px; text-decoration: none; }
+#footernav a:hover{ color: #000000; }
+#footernav a:active{ background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/toolbara_bg.gif) #F4F4F4; color: #000; margin-left: 0px; margin-right: 0px; }
+#footernav #fcurrent a{ background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/toolbara_bg.gif) #F4F4F4; border-left: 1px solid #B6B6B6; border-right: 1px solid #B6B6B6; color: #000000; margin-left: 0px; margin-right: 0px; }
+
+.captionleft { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/caption_left.gif) #3873B3; float: left; height: 75px; width: 0px; }
+.captionmid { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/caption_mid.gif) #EFEFEF repeat-x; font: 13px/21px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif; height: 75px; text-align: center; width: 100%; }
+.captionmid a:link,.captionmid  a:visited,.captionmid  a:active{ background: transparent; color: #000000; text-decoration: none; }
+.captionmid a:hover{ text-decoration: underline; }
+.captionright { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/caption_right.gif) #3873B3; float: right; height: 75px; width: 0px; }
+
+.toolbar { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/toolbar_bg.gif) #F4F4F4; color: #000000; margin: 0px; padding: 0px 6px 0px 6px; border-top: 1px #999 solid; border-bottom: 1px #999 solid; }
+#toolbar { height: 35px; background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/toolbar_bg.gif) #F4F4F4; color: #000000; margin: 0px; padding: 0px; width: 100%; }
+#toolbar ul{ list-style: none; margin: 0; padding: 0px; }
+#toolbar li{ display: inline; float: left; margin: 0 0 0 1px; padding: 0; text-align: center; vertical-align: middle; }
+#toolbar a{ color: #000000; display: block; margin-left: 1px; margin-right: 1px; padding: 13px 5px 3px 5px; text-decoration: none; }
+tbody { margin: 0px; padding: 0px; }
+.bnewthread { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/newthread.gif) no-repeat; display: block; font-size: 0; height: 26px; width: 108px; }
+.bnewreply { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/reply.gif) no-repeat; display: block; font-size: 0; height: 26px; width: 96px; }
+.bclosed { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/threadclosed.gif) no-repeat; display: block; font-size: 0; height: 26px; width: 75px; }
+.bedit { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/edit.gif) no-repeat; display: block; float: right; font-size: 0; height: 22px; width: 39px; }
+.bedit:active { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/editb.gif) no-repeat; }
+.bquote { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/quote.gif) no-repeat; display: block; float: right; font-size: 0; height: 22px; width: 51px; }
+.bqreply { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/quickreply.gif) no-repeat; display: block; float: right; font-size: 0; height: 22px; width: 47px; }
+.bforward { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/quickreply.gif) no-repeat; display: block; float: right; font-size: 0; height: 22px; width: 47px; }
+.frow2 { background: #FAFAFA; border-bottom: 1px #888 dotted; }
+.frow1 { background: #F0F0F0; border-bottom: 1px #888 dotted; }
+.shadleft { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/shad_left.gif) repeat-y left; padding-left: 0px; }
+.shadright { background: url(/web/20070706093039/http://forums.facepunchstudios.com/images/as/shad_right.gif) repeat-y right; padding-right: 0px; }
+
+.quote {border: 1px #aaa dotted; color: #334; font-size: 10px; padding: 5px;  background: #cde;}
+.quotename { font-size: 10px; padding: 2px; color: #fff; border: 1px #aaa dotted; border-bottom: 0px; background: #678; }
+.thcll{border-bottom: 1px #aaa dotted;}
+.thclllf, 
+.sticky, 
+.locked,
+.announce 
+ { letter-spacing: 0px;}
+
+.sticky {background-color: #cde}
+.locked {background-color: #ddd; color: #777;}
+
+.announce { background-color: #bcd; 
+		font-size: 17px; 
+		font-weight: bolder;  
+		letter-spacing: 0px; }
+
+td.inlinemod
+{
+ background-color: #f0d0b1;
+}
+
+.cbutton
+{
+ padding: 2px 3px 2px 3px;
+ white-space: nowrap;
+ color: #eef;
+ font-size: 10px;
+ margin-right: 2px;
+ float: right;
+ width: 50px;
+ text-align: center;
+
+ background-color: #26a;
+ border-left: 1px #47d solid;
+ border-top: 1px #47d solid;
+ border-bottom: 1px #222 solid;
+ border-right: 1px #222 solid;
+
+}
+
+.cbutton:hover
+{
+ background-color: #38e;
+}
+
+.cbutton a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.cbutton a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.cbutton a:hover, .vbmenu_control a:active
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.rating
+{
+ float: right;
+ width: 80px;
+ text-align:right;
+ font-size: 9px;
+ padding: 0px;
+ margin: 0px;
+}
+
+.rating_num
+{
+ font-size: 11px;
+ font-weight: bold;
+}
+
+.rating IMG
+{
+ float: right;
+ padding-left: 4px;
+}
+
+
+.rate-5,
+.rate-4,
+.rate-3,
+.rate-2,
+.rate-1
+{
+	float: right;
+	width: 25px;
+	font-size: 30px;
+	border: 2px solid #aaa;
+	margin: 5px;
+	padding: 3px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+
+.rate-1
+{
+	background-color: #77d;
+	color: #8ff;
+	border: 3px solid #8ff;
+}
+
+
+.rate-5
+{
+	background-color: #fa0;
+	color: #ff0;
+	border: 3px dotted #ff0;
+}
+
+.error
+{
+	color: #f00;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.tpagnav
+{
+	white-space: nowrap;
+	border-bottom: 1px dotted #ddd;
+	background-color: #fafafa;
+	font-size: 9px;
+	padding: 2px;
+}
+
+.rthread_rep, .rthread_views,
+.thread_rep, .thread_views,
+.cthread_rep, .cthread_views,
+.sthread_rep, .sthread_views
+{
+	font-size: 10px;
+
+}
+
+.rthread_title, .rthread_icon, .rthread_lastpost, .rthread_rep, .rthread_views, .rthread_inline,
+.sthread_title, .sthread_icon, .sthread_lastpost, .sthread_rep, .sthread_views, .sthread_inline,
+.cthread_title, .cthread_icon, .cthread_lastpost, .cthread_rep, .cthread_views, .cthread_inline,
+.thread_title, .thread_icon, .thread_lastpost, .thread_rep, .thread_views, .thread_inline
+{
+	background-color: #fff;
+	border-bottom: 1px solid #bbb;
+}
+
+.rthread_title, .rthread_icon, .rthread_lastpost, .rthread_rep, .rthread_views, .rthread_inline
+{
+	background-color: #f2f2f2;
+}
+
+
+
+.rthread_lastpost
+{
+	background-color: #eaeaea;	
+}
+
+.sthread_title, .sthread_icon, .sthread_lastpost, .sthread_rep, .sthread_views, .sthread_inline
+{
+	background-color: #ffc;
+}
+
+.thread_lastpost
+{
+	background-color: #f5f5f5;	
+}
+
+.sthread_lastpost
+{
+	background-color: #fafac3;	
+}
+
+.cthread_title, .cthread_icon, .cthread_lastpost, .cthread_rep, .cthread_views, .cthread_inline
+{
+	background-color: #fafafa;
+}
+
+.cthread_lastpost
+{
+	background-color: #f1f1f1;	
+}
+
+
+.fh_iconold, .fh_nameold, .fh_lastpostold, .fh_threadsold, .fh_repliesold,
+.fh_iconnew, .fh_namenew, .fh_lastpostnew, .fh_threadsnew, .fh_repliesnew
+{
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #ccc;
+}
+
+.fh_iconnew, .fh_namenew, .fh_lastpostnew, .fh_threadsnew, .fh_repliesnew
+{
+	background-color: #fafafa;
+}
+
+.fh_lastpostnew
+{
+	background-color: #f0f0f0;
+}
+
+.fh_lastpostold
+{
+	background-color: #eaeaea;
+}
+
+.qadmin_button
+{
+	font-size: 10px;
+	padding: 3px;
+	border: 1px solid #777;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background-color: #ccc;
+	margin-bottom: 3px;
+}
+
+.file
+{
+	margin: 2%;
+	background-color: #eee;
+	border: 1px solid #888;
+}
+
+.file_detail
+{
+	width: 100px !important;
+}
+
+.file_title
+{
+	font-size: 25px;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+
+TD.file_description
+{
+	padding: 20px;
+	background-color: #fafafa;
+	border-left: 1px solid #aaa;
+}
+
+.tags
+{
+	font-family: courier-new;
+	font-size: 15px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+
+DIV.file_download
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid #111;
+	margin: 10px;
+	padding: 10px;
+	background-color: #07a;
+}
+
+A.file_download
+{
+	color: white;
+}
+
+
+.dltab_head
+{
+	background-color: #cdf;
+	color: #333;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.filebit_a1,
+.filebit_a2,
+.filebit_b1,
+.filebit_b2
+{
+	border-top: 1px solid #ccc;
+	font-size: 11px;
+}
+.filebit_a1
+{
+	background-color: #fff;
+}
+
+.filebit_a2
+{
+	background-color: #fafafa;
+}
+
+.filebit_b1
+{
+	background-color: #f5f5f5;
+}
+
+.filebit_b2
+{
+	background-color: #f1f1f1;
+}
+
+DIV.mediabox
+{
+	background-color: #eee;
+	border: 1px solid #888;
+	padding: 0px;
+	width: 640px;
+	background-image: url('/web/20070706093039/http://forums.facepunchstudios.com/images/as/pin_1.gif');
+}
+
+DIV.mediabuttons
+{
+	font-size: 11px;
+	text-align: left;
+	padding: 20px;
+}
+
+DIV.infobar
+{
+	padding: 5px;
+	padding-left: 32px;
+	background-color: #ffa;
+	border-bottom: 1px solid #aa5;
+	color: #555;
+	background-image: url('/web/20070706093039/http://forums.facepunchstudios.com/images/rate/informative.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	text-align: center;
+}
+
+
+DIV.admin_button
+{
+	display: inline;
+	font-size: 10px;	
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+DIV.admin_button:hover
+{
+
+}
+
+DIV.admin_button A
+{
+
+}
+
+DIV.rated_progress
+{
+	width: 100%;
+	height: 32px;
+	background-image: url( '/web/20070706093039/http://forums.facepunchstudios.com/images/loading_sm.gif' );
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+DIV.big_js_loading
+{
+	width: 256px;
+	height: 100px;
+	background-image: url( '/web/20070706093039/http://forums.facepunchstudios.com/images/loading.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+DIV.rate_it_memberpage
+{
+	background-color: #ffc;
+	border: 1px solid #555;
+	padding: 10px;
+}
+
+#Rate_It_Popup
+{
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	width: 270px;
+}
+
+DIV.rateit_namebox
+{
+	clear: left;
+	background-color: #ffd;
+	border: 1px solid #aaa;
+	padding: 10px;
+	margin: 10px;
+}
+
+.rate_button
+{
+	border: 0;	
+}
+
+DIV.rate_it
+{
+	padding-top: 20px;
+	clear: both;
+}
+
+DIV.rate_it DIV.rate_text_line
+{
+	float: left;
+	margin-top: 35px;
+	font-size: 10px;
+	color: #777;
+}
+
+DIV.rate_text
+{
+	width: 135px;
+	float: right;
+	text-align: center;
+	clear: both;
+}
+
+DIV.rate_button
+{
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+	margin-bottom: 0px;
+	background-position: left top;
+	opacity: 0.25;
+	filter: Alpha(opacity=25);
+}
+
+DIV.rate_it_icon
+{
+	float: right;
+	background-position: left top;
+	height: 16px;
+	width: 16px;
+	padding-left: 0;
+	margin-right: 0;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	filter: Alpha(opacity=60);
+}
+
+DIV.rate_it_icon:hover
+{
+	opacity: 1.0;
+	filter: Alpha(opacity=100);
+}
+
+DIV.rate_it_display, DIV.rate_it_display_box, DIV.rate_it_thread
+{
+	float: left;
+	background-position: left 0px;
+	height: 16px;
+	padding-left: 21px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+	filter: Alpha(opacity=40);
+	color: #555;
+}
+
+DIV.rate_it_display_names
+{
+	float: left;
+	width: 90px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	text-align: center;
+	min-height: 150px;
+	border: 1px dashed #eea;
+}
+
+DIV.rate_it_display_names:hover
+{
+	background-color: #ffe;
+}
+
+DIV.rate_it_display_box
+{
+	width: 110px;
+	opacity: 0.9;
+	filter: Alpha(opacity=90);
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+DIV.rate_it_thread
+{
+	float: right;
+	margin: 3px;
+	padding: 0;
+	padding-right: 21px;
+	background-position: right 0px;
+	opacity: 0.9;
+	filter: Alpha(opacity=90);
+	font-size: 11px;
+}
+
+DIV.rate_it_display:hover
+{
+	background-position: left bottom;
+	opacity: 1.0;
+	filter: Alpha(opacity=100);
+}
+
+DIV.rate_button:hover
+{
+	background-position: left bottom;
+	opacity: 1.0;
+	filter: Alpha(opacity=100);
+}
+
+DIV.rate_bar
+{
+	float: right;	
+	margin: 2px;
+	margin-bottom: 0px;
+	
+	text-align: right;
+	clear: both;
+	color: #aaa;
+	font-size: 10px;
+}
+
+
+DIV.downloadfile
+{
+	background-image: url( "/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/firstnew.gif" );
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	padding-bottom: 10px;
+	clear: both;
+}
+
+DIV.showdownloaders
+{
+	background-image: url( "/web/20070706093039/http://forums.facepunchstudios.com/images/as/buttons/reputation.gif" );
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	padding-bottom: 10px;
+	clear: both;
+}
+
+#downloaders
+{
+	border: 1px solid #777;
+	padding: 10px;
+	background-color: #ffa;
+}
+
+A.showdownloaders
+{
+	color: #555;
+}
+
+DIV.file
+{
+	width: 40%;
+	float: left;
+	border: 0;
+	padding: 5px;
+	margin: 5px;
+	background-color: #fff;
+	font-size: 11px;
+	border: 1px solid #333;
+	padding-left: 50px;
+	
+	background-image: url( "/web/20070706093039/http://forums.facepunchstudios.com/images/as/tb_quicklinks.gif" );
+	background-position: 9px center;
+	background-repeat: no-repeat;
+	height: 35px;
+}
+
+DIV.file .name
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+DIV.file .username
+{
+	font-size: 10px;
+}
+
+DIV.file .filesize
+{
+	float: right;
+	width: 15%;
+	text-align: right
+}
+
+DIV.file .tags
+{
+	font-family: arial;
+	font-size: 10px;
+	text-align: center;
+	border: 0;
+	padding:0;
+	margin: 0;
+	margin-top: 10px;
+}
+
+DIV.custom_forum_bar
+{
+	padding: 5px;
+	background-color: #fea;
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+}
