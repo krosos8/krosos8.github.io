@@ -1,4 +1,4 @@
-var body = document.body.style;
+var body = document.body;
 var player = document.getElementById("player");
 
 var x = y = 1;
@@ -9,8 +9,7 @@ var BGChangeTimer = window.setInterval(changeBGPos, 20);
 var VolumeChangeTimer = window.setInterval(AddVolume, 100);
 
 function changeBGPos() {
-  body.backgroundPositionX = x+"px";
-  body.backgroundPositionY = y+"px";
+  body.setAttribute("style", "background-position:"+x+"px "+y+"px;");
   x-=2.5;
   y-=2.5;
 }
