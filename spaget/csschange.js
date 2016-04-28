@@ -10,8 +10,8 @@ var VolumeChangeTimer = window.setInterval(AddVolume, 100);
 
 function changeBGPos() {
   body.setAttribute("style", "background-position:"+x+"px "+y+"px;");
-  x-=0.625;
-  y-=0.625;
+  x-=0.25;
+  y-=0.25;
 }
 
 function AddVolume() {
