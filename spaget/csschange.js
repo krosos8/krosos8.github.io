@@ -5,13 +5,13 @@ var x = y = 1;
 
 var volume = 0;
 
-var BGChangeTimer = window.setInterval(changeBGPos, 20);
+var BGChangeTimer = window.setInterval(changeBGPos, 5);
 var VolumeChangeTimer = window.setInterval(AddVolume, 100);
 
 function changeBGPos() {
   body.setAttribute("style", "background-position:"+x+"px "+y+"px;");
-  x-=2.5;
-  y-=2.5;
+  x-=0.625;
+  y-=0.625;
 }
 
 function AddVolume() {
